@@ -7,54 +7,92 @@
 <style>
 
 body{
-font-family:Arial;
+font-family:Arial,sans-serif;
 background:#0f172a;
 color:white;
 text-align:center;
-padding:60px;
+padding:40px;
 margin:0;
 }
 
 .hero{
-max-width:700px;
+max-width:800px;
 margin:auto;
 }
 
 h1{
-font-size:52px;
+font-size:58px;
+margin-bottom:10px;
 }
 
-p{
-font-size:20px;
+.subtitle{
+font-size:22px;
 opacity:.9;
+margin-bottom:30px;
+}
+
+input{
+padding:16px;
+width:80%;
+max-width:500px;
+border-radius:12px;
+border:none;
+font-size:16px;
 }
 
 button{
 background:white;
+color:#0f172a;
 border:none;
-padding:15px 30px;
+padding:15px 35px;
 font-size:18px;
-border-radius:10px;
+border-radius:12px;
 margin-top:20px;
 cursor:pointer;
+font-weight:bold;
+}
+
+button:hover{
+opacity:.9;
 }
 
 .card{
+
 background:#1e293b;
-padding:20px;
+
+padding:25px;
+
 margin-top:30px;
-border-radius:15px;
+
+border-radius:20px;
+
 }
 
-input{
-padding:15px;
-width:80%;
-border-radius:10px;
-border:none;
-margin-top:15px;
+.small{
+opacity:.7;
+font-size:15px;
 }
 
 </style>
+
+<script>
+
+function saveEmail(){
+
+let email=document.getElementById("email").value;
+
+if(email===""){
+alert("Enter email first");
+return;
+}
+
+window.location.href=
+"mailto:YOURMAIL@gmail.com?subject=PrecisionAI Waitlist&body="+email;
+
+}
+
+</script>
+
 </head>
 
 <body>
@@ -63,36 +101,55 @@ margin-top:15px;
 
 <h1>PrecisionAI</h1>
 
-<p>
-AI-powered precision assistant for Japanese business workflows.
+<p class="subtitle">
+AI-powered precision assistant for Japanese business workflows
 </p>
 
-<input placeholder="Enter email">
+<input
+id="email"
+placeholder="Enter your email"
+>
 
 <br>
 
-<button onclick="alert('Early access coming soon')">
+<button onclick="saveEmail()">
 Join Waitlist
 </button>
 
+<p class="small">
+Early users get free access 🚀
+</p>
+
 <div class="card">
 
-<h2>What it does</h2>
+<h2>What PrecisionAI does</h2>
+
+<p>✓ Business document precision</p>
+
+<p>✓ Japanese formal rewrites</p>
+
+<p>✓ AI summaries</p>
+
+<p>✓ Accuracy scoring</p>
+
+</div>
+
+<div class="card">
+
+<h2>Launching Soon</h2>
 
 <p>
-✓ Business document precision
+Join early users helping shape AI for precision-focused workflows.
 </p>
 
-<p>
-✓ Japanese formal rewrites
-</p>
+</div>
+
+<div class="card">
+
+<h2>Built by Usman</h2>
 
 <p>
-✓ AI summaries
-</p>
-
-<p>
-✓ Accuracy scoring
+Building AI tools focused on business productivity and precision.
 </p>
 
 </div>
