@@ -1,0 +1,12 @@
+{
+  "name": "precision-ai",
+  "version": "1.0.0",
+  "description": "AI-powered precision assistant for Japanese business workflows",
+  "private": true,
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.4.1"
+  }
+}
