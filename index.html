@@ -1,76 +1,148 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PrecisionAI</title>
+
+<title>PrecisionAI | AI for Precision-First Workflows</title>
 
 <style>
 
-body{
-font-family:Arial,sans-serif;
-background:#0f172a;
-color:white;
-text-align:center;
-padding:40px;
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-.hero{
-max-width:800px;
+body{
+font-family:Inter,Arial,sans-serif;
+background:linear-gradient(180deg,#020617,#0f172a);
+color:white;
+line-height:1.6;
+padding:30px;
+}
+
+.container{
+max-width:1000px;
 margin:auto;
 }
 
+.hero{
+padding-top:60px;
+padding-bottom:40px;
+text-align:center;
+}
+
+.badge{
+display:inline-block;
+padding:8px 15px;
+border-radius:50px;
+background:#1e293b;
+font-size:14px;
+margin-bottom:20px;
+opacity:.9;
+}
+
 h1{
-font-size:58px;
-margin-bottom:10px;
+font-size:64px;
+font-weight:800;
+margin-bottom:15px;
 }
 
 .subtitle{
-font-size:22px;
-opacity:.9;
-margin-bottom:30px;
+font-size:24px;
+opacity:.85;
+max-width:700px;
+margin:auto;
+margin-bottom:35px;
 }
 
 input{
-padding:16px;
 width:80%;
-max-width:500px;
-border-radius:12px;
+max-width:550px;
+padding:18px;
 border:none;
+border-radius:14px;
 font-size:16px;
+outline:none;
 }
 
 button{
-background:white;
-color:#0f172a;
-border:none;
-padding:15px 35px;
-font-size:18px;
-border-radius:12px;
+
 margin-top:20px;
-cursor:pointer;
+
+padding:16px 38px;
+
+border:none;
+
+border-radius:14px;
+
+font-size:18px;
+
 font-weight:bold;
+
+cursor:pointer;
+
+background:white;
+
+color:#0f172a;
+
+transition:.3s;
+
 }
 
 button:hover{
-opacity:.9;
+transform:translateY(-3px);
+}
+
+.small{
+margin-top:15px;
+opacity:.7;
+font-size:14px;
+}
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:20px;
+
+margin-top:50px;
+
 }
 
 .card{
 
 background:#1e293b;
 
-padding:25px;
+padding:30px;
 
-margin-top:30px;
-
-border-radius:20px;
+border-radius:22px;
 
 }
 
-.small{
-opacity:.7;
-font-size:15px;
+.card h2{
+margin-bottom:15px;
+}
+
+.card p{
+opacity:.85;
+margin-top:8px;
+}
+
+footer{
+
+text-align:center;
+
+margin-top:60px;
+
+opacity:.6;
+
+padding-bottom:40px;
+
 }
 
 </style>
@@ -82,12 +154,15 @@ function saveEmail(){
 let email=document.getElementById("email").value;
 
 if(email===""){
-alert("Enter email first");
+
+alert("Please enter email");
+
 return;
+
 }
 
 window.location.href=
-"mailto:YOURMAIL@gmail.com?subject=PrecisionAI Waitlist&body="+email;
+"mailto:YOURMAIL@gmail.com?subject=PrecisionAI Early Access&body="+email;
 
 }
 
@@ -97,32 +172,90 @@ window.location.href=
 
 <body>
 
-<div class="hero">
+<div class="container">
 
-<h1>PrecisionAI</h1>
+<section class="hero">
+
+<div class="badge">
+
+🚀 Building the future of precision-first AI
+
+</div>
+
+<h1>
+
+PrecisionAI
+
+</h1>
 
 <p class="subtitle">
-AI-powered precision assistant for Japanese business workflows
+
+AI-powered assistant helping businesses rewrite, analyze, summarize and improve precision-critical workflows.
+
 </p>
 
 <input
 id="email"
-placeholder="Enter your email"
+placeholder="Enter email for early access"
 >
 
 <br>
 
 <button onclick="saveEmail()">
+
 Join Waitlist
+
 </button>
 
 <p class="small">
-Early users get free access 🚀
+
+Early users receive priority access and founder updates
+
 </p>
+
+</section>
+
+<div class="grid">
 
 <div class="card">
 
-<h2>What PrecisionAI does</h2>
+<h2>
+
+Problem
+
+</h2>
+
+<p>
+
+Business mistakes and unclear communication cost companies time, money and trust.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>
+
+Solution
+
+</h2>
+
+<p>
+
+PrecisionAI helps improve formal communication with AI-powered analysis and rewrites.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>
+
+Features
+
+</h2>
 
 <p>✓ Business document precision</p>
 
@@ -136,25 +269,72 @@ Early users get free access 🚀
 
 <div class="card">
 
-<h2>Launching Soon</h2>
+<h2>
+
+Roadmap
+
+</h2>
+
+<p>✓ MVP launched</p>
+
+<p>⏳ Waitlist</p>
+
+<p>⏳ AI dashboard</p>
+
+<p>⏳ Upload documents</p>
+
+<p>⏳ Beta users</p>
+
+</div>
+
+<div class="card">
+
+<h2>
+
+Built by Usman
+
+</h2>
 
 <p>
-Join early users helping shape AI for precision-focused workflows.
+
+Building AI products focused on business productivity and precision.
+
 </p>
 
 </div>
 
 <div class="card">
 
-<h2>Built by Usman</h2>
+<h2>
+
+Contact
+
+</h2>
 
 <p>
-Building AI tools focused on business productivity and precision.
+
+Email: yourmail@gmail.com
+
+</p>
+
+<p>
+
+Founder: Usman Ghani
+
 </p>
 
 </div>
 
 </div>
 
+<footer>
+
+PrecisionAI © 2026
+
+</footer>
+
+</div>
+
 </body>
+
 </html>
